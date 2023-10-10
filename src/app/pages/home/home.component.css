@@ -1,0 +1,26 @@
+.container__articles {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .articles_main {
+    flex-grow: 1; /* Faz com que o articles_main ocupe todo o espaço disponível na direção da linha */
+  }
+  
+  .articles_others {
+    flex-grow: 1; /* Faz com que o articles_others também ocupe todo o espaço disponível */
+  }
+  
+  @media (max-width: 887px) {
+    .container__articles {
+      display: flex;
+      flex-direction: column;
+    }
+    .articles_others{
+      display: flex;
+      justify-content: space-between;
+      width: 90vw; 
+      align-items: center;
+    }
+  }

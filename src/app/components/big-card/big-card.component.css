@@ -1,0 +1,94 @@
+*{
+    
+    padding: 0; 
+    color: white;
+    font-family: segoe UI; 
+    text-decoration: none;
+}
+.container__big-card{
+    margin: 0 0 0 6%;
+
+}
+  .big-card__description > p{
+    color: grey;
+} 
+
+  /* Estilos para telas pequenas (por exemplo, smartphones) */
+@media (max-width: 576px) {
+    .container__big-card{
+        width: 80%;
+        height: 70%;
+        margin-left: 10%;
+        margin-bottom: 2em;
+    }
+    .big-card__title{
+        font-size: 60%;
+    }
+    .big-card__photo > img {
+        border-radius: 5px;
+    }
+    .big-card__description > p{
+        font-size: 80%;
+    }
+    .big-card__description > p {
+        font-size: 80%;  
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+
+  }
+
+  @media  (min-width: 577px) and (max-width: 887px) {
+    .container__big-card{
+        width: 80vw;
+        margin-left: 10%;
+        margin-bottom: 2em;
+    }
+    .big-card__title{
+        font-size: 60%;
+    }
+    .big-card__description > p{
+        font-size: 80%;
+    }
+    .big-card__photo > img {
+        border-radius: 5px;
+    }    
+    
+  }
+  
+
+
+  /*   .container__big-card{
+        margin: 0px;    
+    }
+    .container__big-card{
+        width: 90vw;        
+    } */
+    
+  
+  
+  /* Estilos para telas grandes (por exemplo, desktops) */
+  @media (min-width: 888px) {
+    .big-card__title{
+        font-size: 60%;
+    }
+    .container__big-card{
+        width: 40vw;
+        max-width: 600px;
+    }
+    .big-card__description > p{
+        font-size: 80%;
+    }
+    .big-card__photo > img {
+        border-radius: 5px;
+    }
+    .big-card__description > p {
+        font-size: 80%;  
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+  }
+  
